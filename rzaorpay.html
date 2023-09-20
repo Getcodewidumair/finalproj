@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment Integration</title>
+    <!-- Include Razorpay JavaScript library -->
+    <script src="https://checkout.razorpay.com/v1/razorpay.js"></script>
+</head>
+<body>
+    <button id="razorpay-button">Pay with Razorpay</button>
+
+    <script>
+        var razorpayOptions = {
+            key: 'YOUR_RAZORPAY_KEY', // Replace with your Razorpay API key
+            amount: 10000, // Amount in paise (100 paise = 1 INR)
+            currency: 'INR',
+            name: 'goldenflour',
+            description: 'Payment for your product/service',
+            image: 'https://example.com/your_logo.png', // Replace with your logo URL
+            handler: function (response) {
+                // Handle the successful payment response here
+                alert('Payment successful. Payment ID: ' + response.razorpay_payment_id);
+            },
+            prefill: {
+                name: 'User Name',
+                email: 'user@example.com',
+                contact: '9876543210'
+            },
+            notes: {
+                // Add any additional notes or custom data here
+            },
+            theme: {
+                color: '#F37254' // Customize the Razorpay button color
+            }
+        };
+
+        var razorpayButton = document.getElementById('razorpay-button');
+
+        razorpayButton.onclick = function () {
+            var rzp = new Razorpay(razorpayOptions);
+            rzp.open();
+        };
+    </script>
+</body>
+</html>
