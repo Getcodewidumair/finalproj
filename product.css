@@ -1,0 +1,90 @@
+*{padding:0; margin:0; box-sizing: border-box; font-family:sans-serif;}
+
+
+#prodinfo{
+    height: 500px;
+    width: 97.5%;
+    margin: 1rem 1rem  1rem;
+    margin-right: 0.6rem;
+    background-color: rgb(208, 255, 239);
+    color: rgb(51, 0, 0);
+    box-shadow: wheat;
+    border-radius: 8px;
+}
+
+.mian{
+ display: grid;
+ grid-template-columns: auto auto auto;
+}
+
+.div1{
+    background-color: black;
+    border: 3px solid rgb(255, 251, 40);
+    width: 15%;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    height: 75px;
+}
+.div1:hover{
+    color: red;
+    background-color: transparent;
+    box-shadow: 7px grey;
+}
+
+.div2 img{
+    width: 100%;
+    height: 70px;
+    /* margin: 1rem; */
+
+}
+
+.div3{
+
+    width: 95%;
+    height: 85%;
+    margin-top: 2.4rem;
+    background-color: rgb(255, 251, 40);
+    border: 3px grey;
+}
+
+.div4 img{
+    margin: 0.3rem;
+    height: 23.5rem;
+    width: 97.6%;
+
+}
+
+/* product detail css starts  */
+
+.proddetail{
+    margin: 1rem;
+    padding-left: 2rem;
+    display:end;
+    align-items: center;
+    justify-content: center;
+
+}
+.div6{
+    padding-left: 6rem;
+}
+.div6:hover{
+    color: rgb(255, 43, 6);
+    background-color: rgb(248, 6, 6);
+    opacity: 2px;
+    cursor: grab;
+    background: transparent;
+}
+.div5{
+    border: 6px rgb(0, 0, 0);
+    border-radius: 6px;
+    height: 90%;
+    width: 90%;
+    margin-right: 2rem;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+.PP1{
+    width: 50%;
+}
